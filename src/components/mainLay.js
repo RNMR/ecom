@@ -32,14 +32,14 @@ const MainLay = ({children}) => {
           ) }
         </ul>
         <Drawer
-          title="Basic Drawer"
+          title="Escoge tu sección"
           placement="left"
           closable={true}
           onClose={onClose}
           visible={mainLayState.visible}
         >
           <ul>
-            { [1,2,3,4,5,6].map((key) => <li> Item {key} </li>) }
+            { ['Tecnología','Hogar','Videojuegos','Deportes','Niños'].map((key) => <li style={{margin:'10px 0'}}> {key} </li>) }
           </ul>
         </Drawer>
       </div>
