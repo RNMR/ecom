@@ -1,0 +1,60 @@
+.layout{
+  &-whole{
+    display: flex;
+    flex-basis: 1;
+    width: 100%;
+    min-height: 100%;
+  }
+  &-side{
+    flex-grow: 1;
+    background-color: #520089;
+    color:#ddd;
+
+    .side-menu{
+      li{
+        margin: 10px 0;
+      }
+      width: 120px;
+    }
+    img{
+      height: 160px;
+      width: auto;
+    }
+  }
+  &-main{
+    flex-grow: 5;
+    padding: 15px;
+    max-width:1000px;
+
+    .carrousel{
+      &-holder{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      &-side-card{
+        flex-grow: 1;
+        min-width: 100px;
+        text-align: center;
+        padding: 15px;
+      }
+    }
+  }
+
+  &-products{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+.ant-carousel .slick-slide  {
+  text-align: center;
+  max-height: 260px;
+  height: auto;
+  line-height: 260px;
+  // background: #364d79;
+  overflow: hidden;
+}
